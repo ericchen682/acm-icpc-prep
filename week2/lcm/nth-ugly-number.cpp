@@ -10,11 +10,11 @@ int solve(int n, int a, int b, int c)
     long long lb = b;
     long long lc = c;
 
-    long long lab = lcm(a, b);
-    long long lbc = lcm(b, c);
-    long long lac = lcm(a, c);
+    long long lab = lcm(la, lb);
+    long long lbc = lcm(lb, lc);
+    long long lac = lcm(la, lc);
 
-    long long labc = lcm(lab, c);
+    long long labc = lcm(lab, lc);
 
     // run bin search on val of n
     int l = 0;
