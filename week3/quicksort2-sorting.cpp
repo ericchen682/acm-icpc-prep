@@ -1,4 +1,4 @@
-// https://www.hackerrank.com/challenges/quicksort1/problem
+// https://www.hackerrank.com/challenges/quicksort2/problem
 
 #include <bits/stdc++.h>
 using namespace std;
