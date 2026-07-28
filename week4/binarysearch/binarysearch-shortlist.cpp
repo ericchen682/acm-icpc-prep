@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <vector>
-#include <math>
+#include <math.h>
 using namespace std;
 
 int p1(vector<int>& arr, int x)
@@ -97,4 +97,8 @@ int p3(vector<int>& arr)
             l = mid + 1;
     }
     return -1;
+}
+
+int main()
+{
 }
