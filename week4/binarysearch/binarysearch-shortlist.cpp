@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <vector>
+#include <math>
 using namespace std;
 
 int p1(vector<int>& arr, int x)
@@ -64,3 +65,19 @@ int p1(vector<int>& arr, int x)
     return res;
 }
 
+int p2(int x)
+{
+    int l = 0, r = sqrt(x) + 1;
+    while(l < r)
+    {
+        int mid = l + (r-l)/2;
+        int cube = mid * mid * mid;
+        if(cube == x)
+            return mid;
+        if(cube > x)
+            r = mid;
+        else
+            l = mid + 1;
+    }
+    return -1;
+}
