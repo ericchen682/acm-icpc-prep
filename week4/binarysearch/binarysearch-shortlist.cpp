@@ -81,3 +81,20 @@ int p2(int x)
     }
     return -1;
 }
+
+int p3(vector<int>& arr)
+{
+    // find a[i] == i
+    int l = 0, r = arr.size();
+    while(l < r)
+    {
+        int mid = l + (r-l)/2;
+        if(arr[mid] == mid)
+            return mid;
+        if(arr[mid] > mid)
+            r = mid;
+        else
+            l = mid + 1;
+    }
+    return -1;
+}
