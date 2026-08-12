@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <utility>
 using namespace std;
 
 // just 2 sum, using bin search on sorted array rather than hash map
